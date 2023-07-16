@@ -241,27 +241,7 @@ namespace Cats3.Base
 
         private int ColumnOrRow() //был bool, потом int
         {
-            #region Old
-            /*int numberHorizontal = 0;
-            int numberVertical = 0;
-            Cat firstPiece = _findMatches.currentMatches[0].GetComponent<Cat>();
-            if (firstPiece != null)
-            {
-                foreach (GameObject currentPiece in _findMatches.currentMatches)
-                {
-                    Cat cat = currentPiece.GetComponent<Cat>();
-                    if (cat._row == firstPiece._row)
-                    {
-                        numberHorizontal++;
-                    }
-                    if (cat._column == firstPiece._column)
-                    {
-                        numberVertical++;
-                    }
-                }
-            }
-            return (numberVertical == 5 || numberHorizontal == 5);*/
-            #endregion
+
             //Сделаем копию совпадений
             List<GameObject> _matchCopy = _findMatches.currentMatches as List<GameObject>;
             
@@ -315,76 +295,7 @@ namespace Cats3.Base
 
         private void CheckToMakeBombs()
         {
-            #region Old
-            /*if (_findMatches.currentMatches.Count == 4 || _findMatches.currentMatches.Count == 7)
-            {
-                _findMatches.CheckBombs();
-            }
-            if (_findMatches.currentMatches.Count == 5 || _findMatches.currentMatches.Count == 8)
-            {
-                if (ColumnOrRow())
-                {
-                    //Сделаю цветную бомбу
-                    //Совпадает ли текущие коты?
-                    if (_currentCat != null)
-                    {
-                        if (_currentCat.isMatched)
-                        {
-                            if (!_currentCat._isColorBomb)
-                            {
-                                _currentCat.isMatched = false;
-                                _currentCat.MakeColorBomb();
-                            }
-                        }
-                        else
-                        {
-                            if (_currentCat._otherCat != null)
-                            {
-                                Cat _otherCat = _currentCat._otherCat.GetComponent<Cat>();
-                                if (_otherCat.isMatched)
-                                {
-                                    if (!_otherCat._isColorBomb)
-                                    {
-                                        _otherCat.isMatched = false;
-                                        _otherCat.MakeColorBomb();
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-                else
-                {
-                    //сделаю взрыв
-                    if (_currentCat != null)
-                    {
-                        if (_currentCat.isMatched)
-                        {
-                            if (!_currentCat._isExplBomb)
-                            {
-                                _currentCat.isMatched = false;
-                                _currentCat.MakeExplBomb();
-                            }
-                        }
-                        else
-                        {
-                            if (_currentCat._otherCat != null)
-                            {
-                                Cat _otherCat = _currentCat._otherCat.GetComponent<Cat>();
-                                if (_otherCat.isMatched)
-                                {
-                                    if (!_otherCat._isExplBomb)
-                                    {
-                                        _otherCat.isMatched = false;
-                                        _otherCat.MakeExplBomb();
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }*/
-            #endregion
+
             //Сколько объектов находится в поиске совпадений в текущих совпадениях
             if(_findMatches.currentMatches.Count > 3)
             {

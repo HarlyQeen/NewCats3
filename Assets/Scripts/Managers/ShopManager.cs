@@ -7,12 +7,16 @@ namespace Cats3.Managers
 {
     public class ShopManager : MonoBehaviour
     {
+        public int scene;
+        private static ShopManager _instance;
         public GameObject _shopPanel;
         public GameObject _roomCam;
         public GameObject _Main2D;
+        private AsyncOperation _loadingScene;
 
         private void Start()
         {
+            _instance = this;
             _shopPanel.SetActive(false);
             _Main2D.SetActive(true);
             _roomCam.SetActive(false);
@@ -49,7 +53,7 @@ namespace Cats3.Managers
 
         public void ExitScene()
         {
-            SceneManager.LoadScene("LevelWorld");
+            _instance._loadingScene = SceneManager.LoadSceneAsync(scene);
         }
     }
 }

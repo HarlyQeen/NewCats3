@@ -51,20 +51,20 @@ MonoBehaviour:
   - {fileID: 154377785994940982, guid: f9441d61641adde4096cd7e8f2b675bb, type: 3}
   - {fileID: 151457951033320698, guid: 896daf54b2037d544beddb1da23bce6b, type: 3}
   - {fileID: 5494196312753912657, guid: 72b08dfb82b1b194b8037c83505fbf85, type: 3}
-  _scoreGoals: d0070000a00f0000401f0000
+  _scoreGoals: d0070000581b000010270000
   _endRequirements:
     _gameType: 0
-    _counterValue: 100
+    _counterValue: 35
   _levelGoals:
-  - _numberNeeded: 10
-    _numberColected: 0
+  - _numberNeeded: 45
+    _numberColected: 48
     _goalSprite: {fileID: 21300000, guid: c28ee74c1d73b0e43800fb9553a4ff88, type: 3}
     matchValue: Blue Cat
-  - _numberNeeded: 10
-    _numberColected: 0
+  - _numberNeeded: 45
+    _numberColected: 56
     _goalSprite: {fileID: 21300000, guid: 02e60958c3b24d649ad424d6648151ee, type: 3}
     matchValue: Yellow Cat
   - _numberNeeded: 9
-    _numberColected: 0
+    _numberColected: 9
     _goalSprite: {fileID: 21300000, guid: 101951ddb8801be419e414271e1f7b21, type: 3}
     matchValue: Breakable

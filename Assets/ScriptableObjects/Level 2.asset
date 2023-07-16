@@ -57,11 +57,15 @@ MonoBehaviour:
     _gameType: 1
     _counterValue: 100
   _levelGoals:
-  - _numberNeeded: 5
-    _numberColected: 0
+  - _numberNeeded: 6
+    _numberColected: 6
     _goalSprite: {fileID: 21300000, guid: 9e02c122b9ecc30479a50ea84e65abf2, type: 3}
     matchValue: Breakable
-  - _numberNeeded: 10
-    _numberColected: 0
+  - _numberNeeded: 35
+    _numberColected: 35
     _goalSprite: {fileID: 21300000, guid: 0f3ddd74d5f7fdd469f80e41b12433b0, type: 3}
     matchValue: Red Cat
+  - _numberNeeded: 35
+    _numberColected: 41
+    _goalSprite: {fileID: 21300000, guid: 02e60958c3b24d649ad424d6648151ee, type: 3}
+    matchValue: Yellow Cat

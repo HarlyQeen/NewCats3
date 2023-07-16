@@ -26,18 +26,18 @@ MonoBehaviour:
   - {fileID: 5494196312753912657, guid: 72b08dfb82b1b194b8037c83505fbf85, type: 3}
   _scoreGoals: 88130000581b000010270000
   _endRequirements:
-    _gameType: 0
-    _counterValue: 110
+    _gameType: 1
+    _counterValue: 25
   _levelGoals:
   - _numberNeeded: 25
-    _numberColected: 0
+    _numberColected: 15
     _goalSprite: {fileID: 21300000, guid: c28ee74c1d73b0e43800fb9553a4ff88, type: 3}
     matchValue: Blue Cat
   - _numberNeeded: 25
-    _numberColected: 0
+    _numberColected: 21
     _goalSprite: {fileID: 21300000, guid: 56c7560280f31eb4b8ae13d85eab6bc1, type: 3}
     matchValue: DeepGreen Cat
   - _numberNeeded: 25
-    _numberColected: 0
+    _numberColected: 40
     _goalSprite: {fileID: 21300000, guid: e953afeb039da5d42b87dfa6f90351d2, type: 3}
     matchValue: Purple Cat

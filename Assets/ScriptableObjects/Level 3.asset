@@ -20,12 +20,12 @@ MonoBehaviour:
   - {fileID: 3219153984905979898, guid: b48564872936f204ea12758427fce340, type: 3}
   - {fileID: 7382656223567448426, guid: 2052a9e340d174441b0d38e6855b887f, type: 3}
   - {fileID: 154377785994940982, guid: f9441d61641adde4096cd7e8f2b675bb, type: 3}
-  _scoreGoals: 64000000
+  _scoreGoals: e8030000dc050000d0070000
   _endRequirements:
     _gameType: 0
-    _counterValue: 10
+    _counterValue: 15
   _levelGoals:
-  - _numberNeeded: 15
-    _numberColected: 7
+  - _numberNeeded: 25
+    _numberColected: 27
     _goalSprite: {fileID: 21300000, guid: c28ee74c1d73b0e43800fb9553a4ff88, type: 3}
     matchValue: Blue Cat

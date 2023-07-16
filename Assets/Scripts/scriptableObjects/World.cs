@@ -8,5 +8,6 @@ namespace Cats3.ScriptableObjects
     public class World : ScriptableObject
     {
         public Level[] _levels;
+
     }
 }
