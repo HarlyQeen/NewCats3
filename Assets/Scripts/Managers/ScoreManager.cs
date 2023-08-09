@@ -36,6 +36,7 @@ namespace Cats3.Managers
         public void CounterScore(int amountToUp)
         {
             _score += amountToUp;
+            
             for (int i = 0; i < _board._scoreGoals.Length; i++)
             {
                 if(_score > _board._scoreGoals[i] && _numberStars < i + 1)

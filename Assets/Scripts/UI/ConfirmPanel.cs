@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using Cats3.Data;
+using Cats3.Base;
 
 namespace Cats3.UI
 {
@@ -37,6 +38,7 @@ namespace Cats3.UI
             {
                 _starsActive = _gameData._saveData._stars[_level];
                 _highScore = _gameData._saveData._highScores[_level];
+
             }
         }
 

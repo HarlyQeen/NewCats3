@@ -59,7 +59,7 @@ namespace Cats3.Base
         }
 
         //Это только для теста и ошибок
-        private void OnMouseOver()
+        /*private void OnMouseOver()
         {
             if (Input.GetMouseButtonDown(1))
             {
@@ -67,16 +67,10 @@ namespace Cats3.Base
                 GameObject marker = Instantiate(_explBomb, transform.position, Quaternion.identity);
                 marker.transform.parent = this.transform;
             }
-        }
+        }*/
 
         void Update()
-        {/*
-        if(isMatched)
         {
-            SpriteRenderer mySprite = GetComponent<SpriteRenderer>();
-            Color currentColor = mySprite.color;
-            mySprite.color = new Color(currentColor.r, currentColor.g, currentColor.b, .5f);
-        }*/
             _targetX = _column;
             _targetY = _row;
             if (Mathf.Abs(_targetX - transform.position.x) > .1)

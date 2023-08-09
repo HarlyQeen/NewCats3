@@ -68,6 +68,14 @@ namespace Cats3.Data
                 file.Close();
                 Debug.Log("Загрузка");
             }
+            else 
+            {
+                _saveData = new SaveData();
+                _saveData._isActive = new List<bool>(28);
+                _saveData._stars = new List<int>(28);
+                _saveData._highScores = new List<int>(28);
+                _saveData._isActive[1] = true;
+            }
         }
 
         private void OnApplicationQuit()
